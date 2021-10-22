@@ -11,7 +11,7 @@
 </head>
 <body>
     
-<!--Верхняя линия-->
+<!-------------------------------------------------------header------------------------------------------------------------------------->
     <header class="header">
         <div class="container page-header">
             <nav class="main-nav">
@@ -40,14 +40,14 @@
         </div>
     </header>
 
-<!--Шапка-->
+<!-------------------------------------------------------hero------------------------------------------------------------------------->
     <main>
         <section class="hero">   
             <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
             <button type="button" class="button" data-modal-open>Заказать услугу</button>
         </section>
 
-<!--Особенности-->
+<!-------------------------------------------------------особеннности------------------------------------------------------------------------->
         <section class="section">
             <div class="container">
             <h2 class="visually-hidden">Особенности</h2>
@@ -85,7 +85,7 @@
         </div>
         </section>
         
- <!--Чем мы занимаемся-->       
+ <!-------------------------------------------------------Чем занимаемся------------------------------------------------------------------------->    
         <section class="section works">
             <div class="container">
             
@@ -110,7 +110,7 @@
             </div>
         </section>
 
-  <!--Наша команда-->             
+  <!-------------------------------------------------------Наша команда------------------------------------------------------------------------->           
         <section class="section staff">
             <div class="container">
             <h2 class="section-title">Наша команда</h2>
@@ -241,6 +241,7 @@
             </div>
         </section>
     
+    <!-------------------------------------------------------Постояннные клиенты------------------------------------------------------------------------->
         <section class="section">
             <div class="container">
                 <h2 class="section-title">Постоянные клиенты</h2>
@@ -282,7 +283,7 @@
         </section>
     </main>
 
-    <!--Подвал-->  
+<!-------------------------------------------------------footer------------------------------------------------------------------------->
     <footer class="footer">
         <div class="container footer-wrapper">
         
@@ -323,20 +324,83 @@
 
         </ul>
     </div>
+
+    <div class="footer-form">
+        <form class="form-subscribe">
+            <label for="email">Подпишитесь на рассылку</label>
+            <input class="input-footer" type="email" name="email" id="email" placeholder="E-mail">
+        </form>
+
+        <button type="submit" class="footer-button-send">Подписаться
+            <svg width="24" height="24" class="footer-icon-send">
+                <use href="./images/main/icons.svg#icon-icon-send"></use>
+            </svg>
+        </button>
+
+    </div>
         </div>
     </footer>
 
+<!-------------------------------------------------------модалка------------------------------------------------------------------------->
     <div class="backdrop is-hidden" data-modal>
+        
         <div class="modal">
-            <button type="button" data-modal-close>
+            <button class="button-close" type="button" data-modal-close>
                 <svg class="close-icon" width="18" height="18">
                     <use href="./images/main/icons.svg#icon-close"></use>
                 </svg>
             </button>
+
+            <h3 class="modal-title">Оставьте свои данные, мы вам перезвоним</h3>
+            <ul class="modal-list list">
+                <li class="modal-item">
+                    <label for="name"  class="label-modal">Имя</label>
+                    <div class="modal-wrapper">
+                    <input type="text" class="input-modal" name="name" id="name">
+                    <svg class="icon-modal" width="18" height="18">
+                        <use href="./images/main/icons.svg#icon-person"></use>
+                    </svg>
+                    </div>
+                </li>
+
+                <li class="modal-item">
+                    <label for="tel"  class="label-modal">Телефон</label>
+                    <div class="modal-wrapper">
+                    <input type="tel" class="input-modal" name="tel" id="tel">
+                    <svg class="icon-modal" width="18" height="18">
+                        <use href="./images/main/icons.svg#icon-phone"></use>
+                    </svg>
+                    </div>
+                </li>
+
+                <li class="modal-item">
+                    <label for="mail"  class="label-modal">Почта</label>
+                    <div class="modal-wrapper">
+                    <input type="email" class="input-modal" name="mail" id="mail">
+                    <svg class="icon-modal" width="18" height="18">
+                        <use href="./images/main/icons.svg#icon-email"></use>
+                    </svg>
+                    </div>
+                </li>
+
+            </ul>
+            <label for="comments"  class="label-modal">Комментарий<textarea name="comments" id="comments" cols="20" rows="10" class="textarea" placeholder="Введите текст"></textarea></label>
+           
+            <div class="checkbox-wrapper">
+            <label for="check" class="label-checkbox">
+                <input type="checkbox" class="input-checkbox visually-hidden" name="checkbox" value="confirm" id="check">
+                    <span class="icon-checkbox"></span>
+                    Соглашаюсь с рассылкой и принимаю 
+            </label>
+            <a class="conditions">Условия договора</a>
+            </div>          
+            <button type="submit" class="button button-modal">Отправить</button>
+           
+ 
         </div>
     </div>
 
-
+    
     <script src="./js/modal.js"></script>
 </body>
 </html>
