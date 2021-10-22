@@ -514,7 +514,6 @@ body {
 /* ---------------------------index-модальное окно-формы ---------------------------------  */
 
 .label-modal {
-
     display: flex;
     flex-direction: column;
     margin-bottom: 4px;
@@ -585,16 +584,17 @@ body {
     font-size: 14px;
     line-height: 1.71;
     cursor: pointer;
+    color: rgba(117, 117, 117, 1);
 }
 
 .icon-checkbox {
     display: flex;
     align-items: center;
     justify-items: center;
- 
+
     margin-right: 5px;
-    width: 16px;
-    height: 15px;
+    width: 15px;
+    height: 14px;
     border: 2px solid #212121;
     border-radius: 2px;
 }
